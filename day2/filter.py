@@ -20,14 +20,20 @@ f=open (filename)
  #       break
  #   line_count+=1
     
+name_counts = {}
+    
 for line_count, data in enumerate(f):
-    if line_count <=10:
-        pass
-    elif line_count <= 15:  #pass lines less than 10, print lines more than 15
-        print data,
+    fields=data.split()
+    gene_name=fields[9]
+    if gene_name not in name_counts:
+        name_counts[gene_name]=1
     else:
-        break
-     
+        name_counts[gene_name] += 1
+
+#Iterate key, value pairs from the name counts dictionary
+for key, value in name_counts.iteritems():
+   #Print gene name and count
+    print key, value
         
 
 

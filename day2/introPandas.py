@@ -66,7 +66,11 @@ df2.to_csv("startColumn.txt", sep='\t', index=False)
 
 #subset: 5000 rows, and dont want this row, want this one, dont want this one. Need 5000 true and falses
 #want to find features for a value less than 10 start position
+
+#print df.shape
 roi = df["start"] < 10
-print df[roi]
+#print roi.shape
+#print df[roi]
+print df[roi].shape
 
 
