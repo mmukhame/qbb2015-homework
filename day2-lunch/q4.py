@@ -10,7 +10,7 @@ for line in f:
         if line_count <=10:
             #fields=line.split()
             #print fields[2]
-            print line.split()[4]
+            print line.split()[2]
         
 
 
