@@ -5,7 +5,6 @@ Count intersection of two BED files
 """
 
 from __future__ import division
-
 import matplotlib.pyplot as plt
 import sys
 import numpy
@@ -79,7 +78,7 @@ for filename in sys.argv[2:]:
 print "Abc: %d, aBc: %d, abC: %d, ABc: %d, aBC: %d, AbC: %d, ABC: %d" % ( count_Abc, count_aBc, count_abC, count_ABc, count_aBC, count_AbC, count_ABC)
 
 plt.figure()
-venn3(subsets=(count_Abc, count_aBc, count_abC, count_ABc, count_aBC, count_AbC, count_ABC), set_labels=('Set1', 'Set2', 'Set3', 'Set4', 'Set5', 'Set6', 'Set7'))
+venn3(subsets=(count_Abc, count_aBc, count_abC, count_ABc, count_aBC, count_AbC, count_ABC), set_labels=('BEAF', 'CTCF', 'SuHW'))
 plt.savefig("Venndiagram.png")
 
 
