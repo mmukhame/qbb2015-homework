@@ -26,9 +26,6 @@ l2=np.log2(df6)
 M=l1-l2 #ratio of intensity (log based)
 A=(df5+df6)*0.5
 
-print M
-print A
-
 plt.figure()
 plt.scatter(M, A)
 plt.title("MA Plot")

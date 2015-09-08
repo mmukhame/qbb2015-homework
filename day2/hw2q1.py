@@ -23,7 +23,7 @@ plt.plot(df[roi] ["start"])
 plt.savefig("questionone.png")
 #y is the position along the chromosome 
 #x is the row number 
-plt.title(Sxl subset) 
+plt.title("Sxl subset") 
 plt.ylabel("start position")
 plt.xlabel("gene")
 

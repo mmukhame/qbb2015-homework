@@ -50,7 +50,7 @@ df.columns = ["chromosome", "database", "type", "start", "end", "score", "strand
 #print df[["chromosome", "start", "end"]]
 
 #subsetting by rows and columns
-#print dr["start"][9:15] 
+#print df["start"][1:7] 
 
 
 #print df.shape #tells us how many rows and columns

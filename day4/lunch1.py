@@ -33,9 +33,6 @@ def set_bits_from_file(arrays, fname):
 #set_bits_from_file(arr,sys.argv[2])
 
 
-
-
-
 all_sums = {}
 for f_name in sys.argv[2:]:
     arr=arrays_from_len_file(sys.argv[1])
