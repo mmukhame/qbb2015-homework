@@ -11,7 +11,7 @@ line_count3 = 0
 line_count4 = 0
 line_count5 = 0
 
-#Iterate the file line by line searching to chromosome 2L
+#Iterate the file line by line searching to chromosome 2L, 2R, 3L, 3R, 4, X
 for line, data in enumerate(f):
     fields=data.split()
     gene=fields[2] #grabbing all the chromosomes
