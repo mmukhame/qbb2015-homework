@@ -1,0 +1,14 @@
+1.) 
+cd /Users/cmdb/qbb2015
+wget http://dl.dropboxusercontent.com/u/169950361/SRP004442.stringtie.tar.gz
+tar xzvf SRP004442.stringtie.tar.gz
+2.) fastqc /Users/cmdb/qbb2015/day1/SRR072893.fastq.gz > SRR072893.fastqc1
+3.) hisat -p 4 -x /Users/cmdb/qbb2015/genomes/BDGP6 -U /Users/cmdb/qbb2015/rawdata/SRR072893.fastq -S SRR.sam
+4.) generate a sorted bam file that can be inputed for indexing:
+Usage: samtools sort [options...] <in.bam> <out.prefix>
+Usage: samtools index [-bc] [-m INT] <in.bam> [out.index]
+
+$ samtools sort /Users/cmdb/qbb2015-homework/day1-homework/SRR.sam srr.sorted.sam
+$ samtools index -b /Users/cmdb/qbb2015-homework/day1-homework/SRR.sam SRR.bai
+
+5.) stringTie sorted.bam -p -G /Users/cmdb/qbb2015/genomes/BDGP6.Ensembl.81.gtf -e -B -o
